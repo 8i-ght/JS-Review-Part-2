@@ -37,7 +37,7 @@
    function leapYear(year) {
     let leap = prompt('What is the current year');
     
-    if (leap/4) {
+    if (leap % 4 == 0) {
         console.log(leap + ' is a leap year');
     } else {
         console.log(leap + ' is not a leap year ');
